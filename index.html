@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Food</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" href="./assets/img/header/logo-icon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="nav-container">
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="">Let's Food <img src="./assets/img/header/logo-icon.svg" alt="logo icon"></a>
+            </div>
+            <ul class="menu-container">
+                <li class="menu-item"><a href="#home">Home</a></li>
+                <li class="menu-item"><a href="#how-it-works">How it works</a></li>
+                <li class="menu-item"><a href="#menu-container">Menu</a></li>
+                <li class="menu-item"><a href="#about-us-container">About</a></li>
+                <li class="menu-item"><a href="#footer-container">Contact</a></li>
+            </ul>
+            <div class="header-buttons">
+                <img class="search-icon" src="./assets/img/header/search-icon.svg" alt="Search icon" />
+                <input type="text" id="search-input" class="hidden" placeholder="Search..." />
+                <button id="search-button" class="hidden">Search</button>
+            </div>
+            
+
+                <div onclick="window.location.href ='#menu-container';" class="shop-icon-container">
+                    <img class="shop-icon" src="./assets/img/header/shop-icon.svg" alt="">
+                    <span class="number-liked-foods">1</span>
+                </div>
+                <button class="open-modal-btn" id="header-btn"><img class="sign-in-icon"
+                        src="./assets/img/header/sign-in-icon.svg" alt="">
+                    Sign
+                    in</button>
+            </div>
+            <div class="mobile-icon-container">
+                <span class="hamburguer-icon-item" id="hamburguer-top"></span>
+                <span class="hamburguer-icon-item" id="hamburguer-mid"></span>
+                <span class="hamburguer-icon-item" id="hamburguer-bot"></span>
+            </div>
+        </nav>
+        <nav class="mobile-nav">
+            <ul class="menu-mobile-container">
+                <li class="menu-item"><a href="#home">Home</a></li>
+                <li class="menu-item"><a href="#how-it-works">How it works</a></li>
+                <li class="menu-item"><a href="#menu-container">Menu</a></li>
+                <li class="menu-item"><a href="#about-us-container">About</a></li>
+                <li class="menu-item"><a href="#footer-container">Contact</a></li>
+                <li class="menu-item">
+                    <div class="shop-icon-container" onclick="window.location.href ='#menu-container';">
+                        <img class="shop-icon" src="./assets/img/header/shop-icon.svg" alt="">
+                        <span class="number-liked-foods">1</span>
+                    </div>
+                </li>
+                <li class="menu-item"><button class="open-modal-btn"><img class="sign-in-icon"
+                            src="./assets/img/header/sign-in-icon.svg" alt="">
+                        Sign
+                        in</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="consumes-fixed-header-space"></div>
+    <main>
+        <section id="home">
+            <div class="home-container">
+                <div class="title-container">
+                    <h1 class="title">Be The Fastest In Delivery Your <span class="yellow-color">Food</span></h1>
+                    <button onclick="window.location.href ='#how-it-works';" class="btn" id="btn-home">Get
+                        Started</button>
+                </div>
+            </div>
+                <img class="food1" src="./assets/img/home/food1.svg" alt="food 1">
+                <img class="food2" src="./assets/img/home/food2.svg" alt="food 2">
+                <img class="food3" src="./assets/img/home/food3.svg" alt="food 3">
+                <span class="circle1"></span>
+                <span class="circle2"></span>
+                <span class="circle3"></span>
+                <span class="circle4"></span>
+            </div>
+            <img class="wave1" src="./assets/img/home/wave.svg" alt="">
+            <img class="wave2" src="./assets/img/home/wave.svg" alt="">
+        </section>
+        <section id="how-it-works">
+            <div class="how-it-works-container">
+                <div class="animation-hiw">
+                    <h2 class="hiw-title">How it works</h2>
+                    <h3 class="hiw-subtitle">What We Serve</h3>
+                    <p class="hiw-description">Product Quality Is Our Priority, And Always Guarantees Halal And Safety
+                        Until
+                        It Is In Your Hands.
+                    </p>
+                </div>
+
+                <div class="services-container">
+                    <div class="service-item">
+                        <img src="./assets/img/howItWorks/order.svg" alt="">
+                        <h4>Easy To Order</h4>
+                        <p>You only order through the app</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="./assets/img/howItWorks/delivery.svg" alt="">
+                        <h4>Fastest Delivey</h4>
+                        <p>Delivery will be on time</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="./assets/img/howItWorks/quality.svg" alt="">
+                        <h4>Best Quality</h4>
+                        <p>The best quality of food for you</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="menu-container">
+            <div class="menu-section">
+                <div class="animation-menu">
+                    <h2 class="menu-section-title">Our menu</h2>
+                    <h3 class="menu-section-subtitle">Our Popular Menu</h3>
+                    <p class="menu-section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                        aliquam
+                    </p>
+                </div>
+                <div class="card-container">
+                    <div class="card-item">
+                        <div class="food-image-container">
+                            <img class="food-image" src="./assets/img/menu/food4.svg" alt="">
+                        </div>
+                        <div class="food-description-container">
+                            <h4>Mie Ramen</h4>
+                            <p class="food-subtitle">lorem ipsum</p>
+                            <div class="card-price-rating">
+                                <p class="price">$ 20.2</p>
+                                <img class="rating" src="./assets/img/menu/like-true.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="food-image-container">
+                            <img class="food-image" src="./assets/img/menu/food5.svg" alt="">
+                        </div>
+                        <div class="food-description-container">
+                            <h4>Salad Tahu</h4>
+                            <p class="food-subtitle">lorem ipsum</p>
+                            <div class="card-price-rating">
+                                <p class="price">$ 20.2</p>
+                                <img class="rating" src="./assets/img/menu/like-false.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="food-image-container">
+                            <img class="food-image" src="./assets/img/menu/food6.svg" alt="">
+                        </div>
+                        <div class="food-description-container">
+                            <h4>Roti Bakar</h4>
+                            <p class="food-subtitle">lorem ipsum</p>
+                            <div class="card-price-rating">
+                                <p class="price">$ 20.2</p>
+                                <img class="rating" src="./assets/img/menu/like-false.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="food-image-container">
+                            <img class="food-image" src="./assets/img/menu/food7.svg" alt="">
+                        </div>
+                        <div class="food-description-container">
+                            <h4>Spaghetti</h4>
+                            <p class="food-subtitle">lorem ipsum</p>
+                            <div class="card-price-rating">
+                                <p class="price">$ 20.2</p>
+                                <img class="rating" src="./assets/img/menu/like-false.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="window.location.href ='#banner-container';" id="btn-more-menu" class="btn">More
+                    Menu</button>
+        <!-- Api food -->
+                    <div class="container">
+                        <h1>Meal Finder</h1>
+                        <div class="flex">
+                            <form class="flex" id="submit">
+                                <input type="text" id="search" placeholder="Search for meals or keyword">
+                                <button class="search-btn" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                            <button class="random-btn" id="random">
+                                <i class="fas fa-random"></i>
+                            </button>
+                        </div>
+                        <div id="result-heading"></div>
+                        <div id="meals" class="meals"></div>
+                        <div id="single-meal"></div>
+                    </div>
+                </div>
+        <!-- end-api-food -->
+        </section>
+        <section id="about-us-container">
+            <div class="about-us">
+                <div class="about-food-container">
+                    <img class="about-food1" src="./assets/img/aboutUs/food8.svg" alt="food 8">
+                    <img class="about-food2" src="./assets/img/aboutUs/food9.svg" alt="food 9">
+                    <img class="about-food3" src="./assets/img/aboutUs/food10.svg" alt="food 10">
+                </div>
+                <div class="about-text-container">
+                    <h2>What they say</h2>
+                    <h3>What Our Costumers Say About Us</h3>
+                    <div class="comments-container">
+                        <div class="comment" id="comment1">
+                            <div class="comment-top">
+                                <div class="profile-container">
+                                    <img class="profile-image" src="./assets/img/aboutUs/profile1.svg" alt="">
+                                </div>
+                                <div class="comment-top-right">
+                                    <h4>Naura Silvana</h4>
+                                    <div class="stars-container">
+                                        <img src="./assets/img/aboutUs/star-filled.svg" alt="">
+                                        <img src="./assets/img/aboutUs/star-filled.svg" alt="">
+                                        <img src="./assets/img/aboutUs/star-filled.svg" alt="">
+                                        <img src="./assets/img/aboutUs/star-filled.svg" alt="">
+                                        <img src="./assets/img/aboutUs/star-half.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-bottom">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis.”</p>
+                            </div>
+                        </div>
+                        <div class="comment" id="comment2">
+                            <div class="comment-top">
+                                <div class="profile-container">
+                                    <img class="profile-image" src="./assets/img/aboutUs/profile2.svg" alt="">
+                                </div>
+                                <div class="comment-top-right">
+                                    <h4>Azura</h4>
+                                    <div class="stars-container">
+                                        <img src="./assets/img/aboutUs/star-filled.svg" alt="">
+                                        <img src="./assets/img/aboutUs/star-filled.svg" alt="">
+                                        <img src="./assets/img/aboutUs/star-filled.svg" alt="">
+                                        <img src="./assets/img/aboutUs/star-filled.svg" alt="">
+                                        <img src="./assets/img/aboutUs/star-half.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-bottom">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis.”</p>
+                            </div>
+                        </div>
+                        <div class="comment" id="comment3">
+                            <div class="comment-top">
+                                <div class="profile-container">
+                                    <img class="profile-image" id="profile3" src="./assets/img/aboutUs/profile3.jpeg"
+                                        alt="">
+                                </div>
+                                <div class="comment-top-right">
+                                    <h4>Emma Brown</h4>
+                                    <div class="stars-container">
+                                        <img src="./assets/img/aboutUs/star-filled.svg" alt="">
+                                        <img src="./assets/img/aboutUs/star-filled.svg" alt="">
+                                        <img src="./assets/img/aboutUs/star-filled.svg" alt="">
+                                        <img src="./assets/img/aboutUs/star-filled.svg" alt="">
+                                        <img src="./assets/img/aboutUs/star-half.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-bottom">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="dot1"></span>
+                    <span class="dot2"></span>
+                    <span class="dot3"></span>
+                </div>
+            </div>
+        </section>
+        <section id="banner-container">
+            <div class="banner">
+                <div class="opacity-background">
+                    <h2>Join our member and get discount up to 50%</h2>
+                    <button class="btn open-modal-btn">Sign Up</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+<!-- Sign In Form -->
+<section class="modal-login" style="display: none;">
+    <form class="form-login">
+        <span class="x-modal"></span>
+        <h2>Sign In</h2>
+        <input class="input-login" id="login-username" type="text" placeholder="Username">
+        <input class="input-login" id="login-password" type="password" placeholder="Password">
+        <button id="login-submit-btn" class="btn">Sign In</button>
+        <a href="#" id="forgot-password-link">Forgot password?</a>
+        <span class="line"></span>
+        <p>Don't have an account? <a href="#" id="register-link">Register</a></p>
+    </form>
+</section>
+<!-- Forgot Password Form -->
+<section class="modal-forgot-password" style="display: none;">
+    <form class="form-forgot-password">
+        <span class="x-modal"></span>
+        <h2>Forgot Password</h2>
+        <input class="input-forgot-password" type="email" placeholder="Enter your email">
+        <button id="forgot-password-submit-btn" class="btn">Reset Password</button>
+        <p>Remembered your password? <a href="#" id="back-to-login">Sign in</a></p>
+    </form>
+</section>
+
+<!-- Sign Up Form -->
+<section class="modal-register" style="display: none;">
+    <form class="form-register">
+        <span class="x-modal"></span>
+        <h2>Sign Up</h2>
+        <input class="input-register" type="text" placeholder="Username">
+        <input class="input-register" type="email" placeholder="Email">
+        <input class="input-register" type="password" placeholder="Password">
+        <button id="register-submit-btn" class="btn">Sign Up</button>
+        <p>Already have an account? <a href="#" id="back-to-login-from-register">Sign in</a></p>
+    </form>
+</section>
+<!-- Begin-Footer -->
+    <footer id="footer-container">
+        <div class="footer">
+            <div class="footer-row" id="footer-top">
+                <div class="footer-col" id="lets-food">
+                    <div class="footer-logo">
+                        <h2>Let's Food</h2>
+                        <img src="./assets/img/header/logo-icon.svg" alt="logo icon">
+                    </div>
+                    <p class="address">Jalan Semangka Raya, Telaga Murni,Cikarang Barat, Kab. Bekasi</p>
+                    <ul class="social-media-container">
+                        <li class="icon-container"><a href=""
+                                target="_blank"><img src="./assets/img/footer/linkedin-icon.svg"
+                                    alt="instagram icon"></a></li>
+                        <li class="icon-container"><a href="" target="_blank"><img
+                                    src="./assets/img/footer/github-icon.svg" alt="instagram icon"></a></li>
+                        <li class="icon-container"><a
+                                href=""
+                                target="_blank"><img src="./assets/img/footer/whatsapp-icon.svg"
+                                    alt="instagram icon"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" id="company">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#about-us-container">About Us</a></li>
+                        <li><a href="#banner-container">Career</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" id="policy">
+                    <h3>Policy</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" id="get-in-touch">
+                    <h3>Get In Touch</h3>
+                    <ul>
+                        <li>+62 896 7311 2766</li>
+                        <li>food@example.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-row">
+                <span class="line"></span>
+            </div>
+            <div class="footer-row" id="footer-bottom">
+                <p>© 2025 Let’sFood. ALL RIGHT RESERVED.</a>.</p>
+            </div>
+            <span class="footer-circle1"></span>
+            <span class="footer-circle2"></span>
+            <span class="footer-circle3"></span>
+        </div>
+    </footer>
+<!-- End-Footer -->
+    <script src="./assets/js/script.js" type="module"></script>
+</body>
+</html>

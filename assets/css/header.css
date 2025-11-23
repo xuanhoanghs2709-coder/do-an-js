@@ -1,0 +1,252 @@
+.nav-container {
+  background-color: var(--light);
+  padding: 0px 0px 10px 40px;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
+  z-index: 10;
+  position: relative;
+  background-color: var(--light);
+  padding-top: 20px;
+  padding-right: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  animation: fade-in-up 1s forwards;
+}
+
+.logo img {
+  margin-bottom: 10px;
+}
+
+.logo a {
+  font-weight: 600;
+  font-size: 24px;
+  color: black;
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+  transition: transform 1s ease;
+}
+
+.logo a:hover {
+  transform: scale(1.05);
+  transition: transform 1s ease;
+}
+
+.menu-container {
+  display: flex;
+  gap: 39px;
+}
+
+.menu-item {
+  list-style: none;
+  opacity: 0;
+  animation: fade-in-up 1s forwards;
+  animation-delay: 0.3s;
+}
+
+.menu-item a {
+  color: var(--text-light);
+  font-weight: 500;
+  font-size: 18px;
+  position: relative;
+}
+
+.menu-item a::after {
+  content: "";
+  height: 4px;
+  width: 100%;
+  background-color: var(--primary);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  border-radius: 4px;
+  transition: transform 0.5s ease;
+  transform-origin: right;
+  transform: scaleX(0%);
+}
+
+.menu-item a:hover::after {
+  transform: scaleX(100%);
+  transition: transform 0.5s ease;
+  transform-origin: left;
+}
+
+.menu-item a:hover {
+  color: black;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  align-items: center;
+}
+
+.search-icon {
+  width: 24px;
+  cursor: pointer;
+  opacity: 0;
+  animation: fade-in-up 1s forwards;
+  animation-delay: 0.4s;
+}
+
+.shop-icon {
+  width: 28px;
+  height: 27.44px;
+  cursor: pointer;
+}
+
+.sign-in-icon {
+  width: 15px;
+  height: 17px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.btn,
+.open-modal-btn {
+  width: 122px;
+  height: 38.13px;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.open-modal-btn:hover,
+.btn:hover,
+.search-icon:hover,
+.shop-icon:hover {
+  opacity: 0.8;
+}
+
+#header-btn {
+  opacity: 0;
+  animation: fade-in-up 1s forwards;
+  animation-delay: 0.6s;
+}
+
+.mobile-icon-container {
+  display: none;
+}
+
+.shop-icon-container {
+  position: relative;
+  opacity: 0;
+  animation: fade-in-up 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.number-liked-foods {
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  top: -8px;
+  right: -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.consumes-fixed-header-space {
+  height: 87px;
+}
+
+@media screen and (max-width: 1100px) {
+  .menu-container {
+    display: none;
+  }
+
+  .header-buttons {
+    display: none;
+  }
+
+  .mobile-nav {
+    width: 100%;
+    display: flex;
+    transition: 0.5s;
+    justify-content: end;
+    position: fixed;
+    top: -372px;
+    right: 0;
+    padding-right: 40px;
+    z-index: 6;
+    background-color: var(--light);
+    transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .show-mobile-nav {
+    transform: translateY(calc(100% + 86px));
+    transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .menu-mobile-container {
+    text-align: end;
+  }
+
+  .menu-mobile-container li {
+    margin-bottom: 20px;
+  }
+
+  .hamburguer-icon-item {
+    display: block;
+    height: 4px;
+    width: 25px;
+    border-radius: 8px;
+    background-color: black;
+    position: relative;
+    transition: 0.5s ease-out;
+  }
+
+  .changeSpanMid {
+    transform: rotate(-135deg);
+    transition: 0.5s ease-out;
+    position: absolute;
+    background-color: transparent;
+  }
+
+  .changeSpanTop {
+    transform: rotate(135deg);
+    transition: 0.5s ease-out;
+  }
+
+  .changeSpanBot {
+    transform: rotate(-135deg);
+    transition: 0.5s ease-out;
+    position: absolute;
+  }
+
+  .mobile-icon-container {
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

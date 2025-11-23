@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap");
+@import url("header.css");
+@import url("./home.css");
+@import url("howItWorks.css");
+@import url("menu.css");
+@import url("aboutUs.css");
+@import url("banner.css");
+@import url("footer.css");
+@import url("modal-login.css");
+@import url("animations.css");
+
+:root {
+  --light: #fff9ea;
+  --text-light: #1d1d1db3;
+  --primary: #ffcb45;
+  --secondary: #ffac4b;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Readex Pro", sans-serif;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* width */
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+html::-webkit-scrollbar-track {
+  background: var(--light);
+}
+
+/* Handle */
+html::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+}
+
+/* Handle on hover */
+html::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 203, 69, 0.6);
+}
+
+
+/* begin-search */
+.hidden {
+  display: none; /* Ẩn phần tử */
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center; /* Để đảm bảo các thành phần được canh thẳng hàng */
+}
+
+.search-icon {
+  cursor: pointer; /* Cho phép nhấp chuột vào biểu tượng */
+}
+
+.search-icon:hover {
+  opacity: 0.7; /* Tạo hiệu ứng hover */
+}
+
+#search-input {
+  padding: 5px;
+  width: 100px; /* Tùy chỉnh kích thước */
+  border: 1px solid #ccc; /* Tạo viền */
+}
+/* End-search */
+
+
+/* Api Food */
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  background: #2d2013;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+} */
+
+.container {
+  margin: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+input,
+button{
+  border: 1px solid #dedede;
+  border-top-left-radius:4px ;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius:4px ;
+  border-bottom-right-radius: 4px;
+  font-size: 14px;
+  padding: 8px 10px;
+  margin: 0;
+}
+input[type='text']{
+  width: 300px;
+}
+.search-btn{
+  cursor: pointer;
+  border-left: 0;
+  border-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.random-btn{
+  cursor: pointer;
+  margin-left: 10px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.meals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.meal {
+  cursor: pointer;
+  position: relative;
+  height: 180px;
+  width: 180px;
+  text-align: center;
+}
+
+.meal img {
+  width: 100%;
+  height: 100%;
+  border: 4px #fff solid;
+  border-radius: 2px;
+}
+
+.meal-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease-in;
+  opacity: 0;
+}
+
+.meal:hover  .meal-info{
+  opacity: 1;
+}
+
+.single-meal {
+  margin: 30px auto;
+  width: 70%;
+}
+
+.single-meal img {
+  width: 300px;
+  margin: 15px;
+  border: 4px #fff solid;
+  border-radius: 2px;
+}
+
+.single-meal-info {
+  margin: 20px;
+  padding: 10px;
+  border: 2px #6350e0 dashed;
+  border-radius: 5px;
+}
+
+.single-meal p {
+  margin: o;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+.single-meal ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.single-meal ul li {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  background-color: #fff;
+  display: inline-block;
+  color: #2d2013;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 0 5px 5px 0;
+}
+
+@media (max-width: 800px) {
+  .meals {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .meals {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .meal {
+      height: 200px;
+      width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  input[type='text'] {
+      width: 100%;
+  }
+
+  .meals {
+      grid-template-columns: 1fr;
+  }
+
+  .meal {
+      height: 300px;
+      width: 300px;
+  }
+}
+
+/* End-Api-Food */
+
+
+
+/* Styles cho form đăng ký */
+.modal-register {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: rgba(18, 18, 18, 0.6);
+  z-index: 15;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.show-modal {
+  display: flex;
+}
+
+.form-register {
+  background-color: var(--light);
+  border-radius: 10px;
+  height: 400px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.input-register {
+  border: none;
+  border-bottom: 1px rgb(173, 173, 173) solid;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  font-size: 17px;
+  color: var(--text-light);
+  padding-left: 30px;
+  padding-bottom: 5px;
+}
+
+.input-register::placeholder {
+  font-size: 17px;
+  color: var(--text-light);
+}
+
+#register-submit-btn {
+  width: 100%;
+}
+
+.form-register a {
+  color: var(--secondary);
+}
+
+
+
+
+.modal-forgot-password {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: rgba(18, 18, 18, 0.6);
+  z-index: 15;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.form-forgot-password {
+  background-color: var(--light);
+  border-radius: 10px;
+  height: 300px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.input-forgot-password {
+  border: none;
+  border-bottom: 1px rgb(173, 173, 173) solid;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  font-size: 17px;
+  color: var(--text-light);
+  padding-left: 30px;
+  padding-bottom: 5px;
+}
+
+.input-forgot-password::placeholder {
+  font-size: 17px;
+  color: var(--text-light);
+}
+
+#forgot-password-submit-btn {
+  width: 100%;
+}
